@@ -16,11 +16,7 @@ public:
 	}
 };
 
-TEST_F(BaseballFixture, ThrowExpectionWhenInputLemngthIsUnmatched) {
+TEST_F(BaseballFixture, ThrowExpectionInvalidCases) {
 	assertIllegalArgument("12");
-}
-
-TEST_F(BaseballFixture, ThrowExceptionWhenInvalidChar) {
 	assertIllegalArgument("12s");
-	
 }
